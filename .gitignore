@@ -1,0 +1,14 @@
+# Large data files
+data/raw/
+data/processed/
+*.csv
+
+# R specific
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+*.Rproj
+
+# OS files
+.DS_Store
