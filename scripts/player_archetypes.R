@@ -324,7 +324,8 @@ rb_radar_data <- rbind(rep(10, ncol(rb_radar_data)),  # max
                        rep(0, ncol(rb_radar_data)),   # min
                        rb_radar_data) %>%
   select(-c(count)) %>%
-  rename(EPA = avg_epa,
+  rename(`Next Season EPA` = avg_next_season_epa,
+         EPA = avg_epa,
          `RYOE%` = avg_ryoe_pct,
          `RYOE/ATT` = avg_ryoe_per_att,
          # xYDS = avg_expected_rush_yards,
@@ -473,7 +474,8 @@ wr_radar_data <- rbind(rep(10, ncol(wr_radar_data)),  # max
                        rep(0, ncol(wr_radar_data)),   # min
                        wr_radar_data) %>%
   select(-c(count)) %>%
-  rename(EPA = avg_epa,
+  rename(`Next Season EPA` = avg_next_season_epa,
+         EPA = avg_epa,
          CUSH = avg_cushion,
          SEP = avg_separation,
          `CATCH%` = avg_catch_pct,
